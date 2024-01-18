@@ -1,0 +1,96 @@
+Laravel Notes
+
+// create new laravel project
+composer create-project laravel/laravel example-app
+
+// change directory
+cd example-app
+
+// start hosting
+php artisan serve
+
+// for installing bootstrap
+composer require laravel/ui
+
+// install bootstrap
+php artisan ui bootstrap
+
+// bootstrap
+npm i bootstrap@5.3.2
+
+// check node installation
+# for node
+node -v
+
+# for npm
+npm -v
+
+// run bootstrap
+npm install
+npm run dev
+
+// php artisan storage:link
+
+<!-- Scripts -->
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+ <!-- Load Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Load jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Load Bootstrap JS with Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+// create new laravel project
+composer create-project laravel/laravel example-app
+
+// change directory
+cd example-app
+
+// start hosting
+php artisan serve
+
+open xampp, start, then go to http://localhost/phpmyadmin
+
+resources > views > welcome.blade.php
+make <h1>Test</h1> output
+
+npm install
+npm run dev
+composer require laravel/ui
+
+resources > routes > web.php
+
+php artisan ui bootstrap
+<!--end-->
+
+Laravel reviewer
+
+1. Model
+- it is used to interact with the database table.
+- include queries such as (insert, update, delete)
+- eloquent ORM,
+	- ORM or Object Relational Mapping
+	- a tool used to work with database
+	- allows you to write object oriented syntax
+2. Route
+- defines how your application response to HTTP requests
+3. Middleware
+- is a filter mechanism that allows you to perform actions before and after HTTP request enter your application.
+- can be used for authentication, authorization, logging etc.
+4. Controller
+- responsible for handling HTTP requests and returning appropriate responses.
+5. Migration
+- a way to version control your database schema.
+6. ENV/ Environment Configurations
+- manage environment-specific settings
+- such as database credentials, API Keys etc.
+7. DMZ
+- is an network architecture or configration that provides additional layer of security for web servers and other network services.
+- its a buffer zone between a trusted internal network(intranet) and the untrusted external network(internet)
+- some use cases
+	1. Web Servers - separate public web uses and private. example is e-commerce website, DMZ handle customer interaction and online transaction, while internal network contains the management systems etc...
